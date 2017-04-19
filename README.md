@@ -1,4 +1,4 @@
-# CS565-Assignment2
+# Faceless_Men CS565-Assignment2
 
 ## Neural Probabilistic Language Model
 
@@ -42,12 +42,10 @@ Required files:
 * convert.pl
 * extract.py
 
-We use the [enwik8](http://mattmahoney.net/dc/textdata.html) corpus consisting of the first 10^8 words in the English language Wikipedia. This file contains complex XML encoding, so it is first converted to English sentences using a Perl script as `perl data/convert.pl enwik8 > text8`.
-
-After obtaining the corpus, it is converted to the CoNLL format using the POS tagging, Chunk tagging and NER tagging modules provided in NLTK as `python data/extract.py`. 
+We use the [enwik8](http://mattmahoney.net/dc/textdata.html) corpus consisting of the first 10^8 words in the English language Wikipedia. This file contains complex XML encoding, so it is first converted to English sentences using a Perl script as `perl convert.pl enwik8 > text8`.
 
 #### NER model
 
-The data in CoNLL format is first processed into lists and Numpy arrays using `python part4-ner/preprocess.py`. The neural network model is implemented in *model.py* and the training is done in *main.py*.
+The data preprocessing, neural network implementation, model training and prediction generation is done in *entityrecognition.py*.
 
-*model.py* contains code for a single hidden layer model and a CNN model. In addition, an LSTM model was also implemented, but did not perform well.
+*entityrecognition.py* contains code for a single hidden layer model and a CNN model. In addition, an LSTM model was also implemented, but did not perform well.
