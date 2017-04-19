@@ -37,11 +37,6 @@ The obtained embeddings are saved in *word2vec_emb.pickle*
 
 #### Generating the dataset
 
-Required files:
-* enwik8
-* convert.pl
-* extract.py
-
 We use the [enwik8](http://mattmahoney.net/dc/textdata.html) corpus consisting of the first 10^8 words in the English language Wikipedia. This file contains complex XML encoding, so it is first converted to English sentences using a Perl script as `perl convert.pl enwik8 > text8`.
 
 #### NER model
